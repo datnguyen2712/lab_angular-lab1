@@ -1,0 +1,47 @@
+<h1 class="text-center bg-secondary text-white p-3">Bài 2 Lab 1</h1>
+
+<div class="container p-5">
+  <div class="card text-center border border-1 border-success shadow-lg">
+    <div class="card-header bg-warning text-black fs-1 fw-bold p-3">
+      THÔNG TIN SINH VIÊN
+    </div>
+    <div class="card-body bg-warning-subtle p-4">
+      <ul class="list-group fs-3">
+        <img class="rounded" src="assets/{{student.hinh}}" alt="">
+        <li class="list-group-item"><b>Họ tên:</b> {{student.hoten}}</li>
+        <li class="list-group-item"><b>Ngày sinh:</b> {{student.ngaysinh}}</li>
+        <li class="list-group-item"><b>Giới tính:</b> {{student.gioitinh == 1 ? 'Nam' : 'Nữ'}}</li>
+        <li class="list-group-item"><b>Điểm:</b> {{student.diem}}</li>
+      </ul>
+    </div>
+    <div class="card-footer text-white bg-dark fs-2 p-3">
+      Lab 1 môn Angular
+    </div>
+  </div>
+</div>
+
+<h1 class="text-center bg-secondary text-white p-3">Bài 3 Lab 1</h1>
+
+<div class="container p-5">
+  <div class="card">
+    <div class="card-header bg-primary text-white fs-3">
+      DANH SÁCH NHÀ KHOA HỌC
+    </div>
+    <div class="card-body bg-primary-subtle fs-5">
+      <div id="ds">
+        {{render()}}
+      </div>
+    </div>
+    <div class="card-footer bg-dark-subtle fs-4">
+      Có <b>{{listNhaKH.length}}</b> nhà khoa học trong danh sách
+    </div>
+  </div>
+</div>
+
+<h1 class="text-center bg-secondary text-white p-3">Bài 4 Lab 1</h1>
+<div class="container-fluid text-center">
+  <h2 class="text-primary">SẢN PHẨM YÊU THÍCH</h2>
+  <div class="row p-3" id="listSP">
+      {{renderSP()}}
+  </div>  
+</div>
